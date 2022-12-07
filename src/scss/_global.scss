@@ -1,0 +1,33 @@
+body {
+  @extend %opensans-400;
+  font-stretch: condensed;
+  background-color: #fff;
+  color: $default;
+  font-size: 24px;
+  line-height: 32px;
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.title {
+  @extend %pobeda;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  color: $green;
+  margin-bottom: 40px;
+}
+
+

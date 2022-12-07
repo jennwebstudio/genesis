@@ -1,0 +1,34 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.home {
+  background: url('../images/hero-bg.jpg') no-repeat center/cover ;
+  padding: 55px 0 235px;
+  &__hero {
+    max-width: 700px;
+  }
+  &__subtitle {
+    @extend %opensans-600;
+    font-weight: 600;
+    font-size: 20px;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__title {
+    @extend %pobeda;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 45px;
+  }
+  &__text {
+    line-height: 1.5;
+    max-width: 400px;
+  }
+}
+
