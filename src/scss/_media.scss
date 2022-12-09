@@ -1,0 +1,179 @@
+
+@media (max-width: 992px) {
+
+/* ---------------- header --------------------  */
+
+  .header {
+    &__menu {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      height: 100vh;
+      background-color: $bg;
+      transition: left .3s;      
+      &._active {
+        left: 0;
+      }
+    }
+  }
+
+  .menu {
+    &__list {
+      padding-top: 50px;
+      flex-direction: column;
+      overflow: auto;
+    }
+    &__icon {
+      display: block;
+      width: 48px;
+      height: 26px;
+      position: relative;
+      cursor: pointer;
+      z-index: 5;
+      span {
+        transition: all .3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $default;
+        &:first-child {
+          top: 0;
+        }
+        &:last-child {
+          top: auto;
+          bottom: 0;
+          width: 35px;
+          left: auto;
+          right: 0;
+        }
+      }
+      &._active {
+        span {
+          transform: scale(0);      
+          &:first-child {
+            transform: rotate(-45deg);
+            top: calc(50% - 1px);
+          }      
+          &:last-child {
+            width: 100%;
+            transform: rotate(45deg);
+            bottom: calc(50% - 1px);
+          }
+        }
+      }
+    }
+  }
+
+    /* ---------------- home --------------------  */
+  
+  .home {
+    background: url('../images/hero-tablet.jpg') no-repeat center/cover;
+    padding: clamp(0.938rem, 0.342rem + 2.98vw, 2.188rem) 0 clamp(22.5rem, 19.673rem + 14.14vw, 28.438rem);
+    &__hero {
+      max-width: 730px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__subtitle {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 64px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 20px;
+    }
+  }
+
+    /* ---------------- about --------------------  */
+    .about {
+
+      &__achivement-num {
+        font-size: 56px;
+      }
+      &__achivement-text {
+        font-size: 20px;
+      }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  /* ---------------- about --------------------  */
+  .about {
+    &__content {
+      flex-direction: column;
+      margin-bottom: 60px;
+      justify-content: center;
+    }
+    &__img {
+      flex: 0 0 100%;
+      order: 1;
+    }
+    &__info {
+      text-align: center;
+    }
+    &__achivements {
+      padding: 0;
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__achivement-num {
+        font-size: 64px;
+      }
+    &__achivement-text {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+
+  /* ---------------- home --------------------  */
+
+  .home {
+    background: url('../images/hero-mob.jpg') no-repeat center/cover;
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    &__title {
+      font-size: 56px;
+      margin-top: -35px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+    /* ---------------- about --------------------  */
+
+  .about {
+    &__achivements {
+      gap: 40px;
+    }
+    &__achivement-num {
+      font-size: 48px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+/* ---------------- header --------------------  */
+
+  .menu {
+    &__link {
+      font-size: 18px;
+    }
+  }
+
+}

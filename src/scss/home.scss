@@ -4,7 +4,7 @@
 @import 'global';
 
 .home {
-  background: url('../images/hero-bg.jpg') no-repeat center/cover ;
+  background: url('../images/hero-bg.jpg') no-repeat center/cover;
   padding: 55px 0 235px;
   &__hero {
     max-width: 700px;
@@ -32,3 +32,4 @@
   }
 }
 
+@import 'media';
