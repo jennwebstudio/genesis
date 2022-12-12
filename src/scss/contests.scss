@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.contests {
+
+  &__images {
+    flex: none;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+  }
+
+
+  &__img {
+    position: relative;
+    &:first-child {
+      margin-top: 170px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+      }
+      &::before {
+        width: 146px;
+        height: 156px;
+        background: url('../images/deco-4.png') no-repeat center/cover;
+        top: -50%;
+        right: 0;
+      }
+      &::after {
+        width: 270px;
+        height: 210px;
+        background: url('../images/illustration.png') no-repeat center/cover;
+        bottom: -15px;
+        left: -120%;
+      }
+    }
+    img {
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
+
+@import 'media';

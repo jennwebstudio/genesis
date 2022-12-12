@@ -8,8 +8,9 @@
   padding: clamp(3.125rem, 2.125rem + 5vw, 6.25rem) 0;
 
   &__wrap {
-    background: url('../images/educatprojects-bg.png') top left/cover no-repeat;
-    //background-size: cover;
+    background-image: url('../images/educatprojects-bg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
     padding: clamp(2.5rem, 1.607rem + 4.46vw, 4.375rem) 0;
   }
 
@@ -58,7 +59,7 @@
         width: 110px;
         height: 130px;
         position: absolute;
-        background: url('../images/educatprojects/deco-1.png') no-repeat center/cover;
+        background: url('../images/projects/deco-1.png') no-repeat center/cover;
         top: 48px;
         left: 1.3%;
         z-index: 1;
@@ -77,14 +78,45 @@
     width: 60px;
     height: 118px;
     position: absolute;
-    background: url('../images/educatprojects/deco-2.png') no-repeat center/cover;
+    background: url('../images/projects/deco-2.png') no-repeat center/cover;
     top: 0;
     left: 111%;
     z-index: 1;
   }
 }
 
+.projects-upbringing {
+  .projects__wrap {
+    background-image: url('../images/upbringing-bg.png');
+    background-position: top right;
+  }
+    .projects__column.left::before {
+      display: none;
+    }
+  .middle::after {
+    width: 160px;
+    background: url('../images/projects/deco-3.png') no-repeat center/cover;
+    left: -130%;
+  }
+  .top {
+    position: relative;
+    &::after {
+      content: "";
+        width: 60px;
+        height: 118px;
+        position: absolute;
+        background: url('../images/projects/deco-2.png') no-repeat center/cover;
+        bottom: 0;
+        left: 111%;
+        z-index: 1;
+    }
+  } 
+}
 
-
+.contests {
+  .projects__wrap {
+    background-image: url('../images/contests-bg.png');
+  }
+}
 
 @import 'media';

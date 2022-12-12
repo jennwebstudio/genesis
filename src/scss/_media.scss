@@ -1,6 +1,5 @@
 @media (max-width: 1180px) {
 
-
   /* ---------------- projects --------------------  */
 
   .projects {
@@ -21,6 +20,29 @@
     &__text {
       text-align: left;
     }
+  }
+  
+  .projects.projects-upbringing { 
+    .projects__wrap {
+      background-image: none;
+      background-color: $bg;
+    }
+    .projects__images {
+      order: 1;
+    }
+  }
+
+  .projects.contests { 
+    .projects__wrap {
+      background-image: none;
+      background-color: $bg;
+    }
+  }
+
+  .contests {
+    &__img:first-child::after {
+        display: none;
+      }
   }
 }
 
@@ -174,7 +196,16 @@
       }
     }
     &__column.left,
-    .middle {
+    .middle, .top {
+      display: none;
+    }
+  }
+
+  .contests {
+    &__images {
+      width: 100%;
+    }
+    &__img:first-child {
       display: none;
     }
   }
