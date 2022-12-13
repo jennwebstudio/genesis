@@ -3,6 +3,7 @@
   /* ---------------- projects --------------------  */
 
   .projects {
+    padding: clamp(1.875rem, 1.41rem + 2.33vw, 3.125rem) 0;
     &__wrap {
       background-image: none;
       background-color: $bg;
@@ -41,8 +42,59 @@
 
   .contests {
     &__img:first-child::after {
-        display: none;
+      display: none;
+    }
+  }
+
+   /* ---------------- footer --------------------  */
+
+  .footer {
+    padding: 40px 0 50px;
+    &__logo {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    &__item--links {
+      display: none;
+    }
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(1.25rem, 0.552rem + 3.49vw, 3.125rem);
+      margin-bottom: 65px;
+    }
+    &__item {
+      text-align: center;
+      width: 100%;
+      &:first-child,
+      &:last-child {
+        max-width: 100%;
       }
+    }
+    &__hr {
+      width: 70%;
+      margin-bottom: 25px;
+    }
+
+    &__contact {
+      justify-content: center;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .phone a {
+    display: inline;
+  }
+  
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    &__text {
+      text-align: center;
+    }
   }
 }
 
@@ -209,6 +261,29 @@
       display: none;
     }
   }
+
+    /* ---------------- footer --------------------  */
+
+    .footer {
+      &__item p {
+        font-size: 18px;
+      }
+
+      .address {
+        font-size: 16px;
+      }
+    }
+
+    .phone a {
+      font-size: 20px;
+    }
+
+    .copyright {
+      font-size: 16px;
+      &__link a {
+        font-size: 16px;
+      }
+    }
 }
 
 
@@ -253,4 +328,20 @@
     }
   }
 
+    /* ---------------- footer --------------------  */
+
+  .footer {
+    padding: 40px 0 30px;
+    &__content {
+      margin-bottom: 45px;
+    }
+    &__contact {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .phone a {
+    display: block;
+  }
 }
