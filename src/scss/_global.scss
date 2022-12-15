@@ -16,6 +16,31 @@ body {
   padding: 0 15px;
 }
 
+[class*="__blockquote"] {
+  
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+  @extend %opensansitalic-600;
+  color: $green;
+  font-size: 28px;
+  text-align: right;
+  blockquote {
+    max-width: calc(1200px / 1290px * 100%);
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+  }
+  blockquote::before {
+    position: absolute;
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url('../images/deco-5.png') center/cover no-repeat;
+    top: 0;
+    left: -5%;
+    z-index: -1;
+  }
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -54,11 +79,65 @@ body {
   }
 }
 
+.breadcrambles {
+  background-color: $salad;
+
+  &__inner {
+    padding: 25px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;   
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 25px;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid $default;
+      border-left: 2px solid $default;
+      top: 37%;
+      right: 0;
+      z-index: 1;
+      transform: rotate(135deg);
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $default;
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: 1px solid $default;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .title {
     font-size: 36px;
   }
+  [class*="__blockquote"] {
+    font-size: 24px;
+  }
+}
 
+@media (max-width: 768px) {
+  [class*="__blockquote"] {
+    blockquote::before {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 560px) {
@@ -68,5 +147,9 @@ body {
 
   .text {
     font-size: 18px;
+  }
+
+  [class*="__blockquote"] {
+    font-size: 20px;
   }
 }

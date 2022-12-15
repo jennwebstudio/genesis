@@ -1,6 +1,6 @@
 @media (max-width: 1180px) {
 
-  /* ---------------- projects --------------------  */
+  /* ---------------- home page projects --------------------  */
 
   .projects {
     padding: clamp(1.875rem, 1.41rem + 2.33vw, 3.125rem) 0;
@@ -166,9 +166,9 @@
     }
   }
 
-    /* ---------------- home --------------------  */
+    /* ---------------- home page intro  --------------------  */
   
-  .home {
+  .intro {
     background: url('../images/hero-tablet.jpg') no-repeat center/cover;
     padding: clamp(0.938rem, 0.342rem + 2.98vw, 2.188rem) 0 clamp(22.5rem, 19.673rem + 14.14vw, 28.438rem);
     &__hero {
@@ -191,7 +191,7 @@
     }
   }
 
-    /* ---------------- about --------------------  */
+    /* ---------------- home page section about --------------------  */
     .about {
 
       &__achivement-num {
@@ -206,7 +206,7 @@
 
 @media (max-width: 768px) {
 
-  /* ---------------- about --------------------  */
+  /* ---------------- home page section about --------------------  */
   .about {
     &__content {
       flex-direction: column;
@@ -232,11 +232,47 @@
       font-size: 24px;
     }
   }
+
+    /* ---------------- about page section introduction --------------------  */
+
+  .introduction {
+    &__director {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      &::after {
+        display: none;
+      }
+    }
+
+    &__info {
+      width: 100%;
+    }
+    &__docs {
+      max-width: 100%;
+    }
+  }
+  .docs {
+    padding: 0;
+    &__item {
+      padding: 100px 0 0;
+      margin-bottom: 70px;
+      text-align: center;
+      a {
+        font-size: 20px;        
+      }
+      img {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
 }
 
 @media (max-width: 680px) {
 
-  /* ---------------- projects --------------------  */
+  /* ---------------- home page sections with projects --------------------  */
 
   .projects {
     &__images {
@@ -289,9 +325,9 @@
 
 @media (max-width: 560px) {
 
-  /* ---------------- home --------------------  */
+  /* ---------------- home page intro  --------------------  */
 
-  .home {
+  .intro {
     background: url('../images/hero-mob.jpg') no-repeat center/cover;
     &__subtitle {
       font-size: 16px;
@@ -306,7 +342,7 @@
       font-size: 16px;
     }
   }
-    /* ---------------- about --------------------  */
+    /* ---------------- home page section about --------------------  */
 
   .about {
     &__achivements {

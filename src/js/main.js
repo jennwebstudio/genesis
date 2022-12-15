@@ -14,7 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('_lock');  // не дает скроллить сайт при открытом меню
   });
 
+  // ------------------ smooth scroll ---------------
 
-  
-  
+  const footLogo = document.querySelector('.footer__logo img');
+
+  function smoothScroll(selector) {
+    const id = selector.getAttribute('href');
+
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+	});
+}
+  menu.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (event.target && event.target.matches(".menu__link")) {
+      smoothScroll(event.target);
+    }
+  });  
+
+  footLogo.addEventListener('click', (event) => {
+    event.preventDefault();    
+    smoothScroll(event.target.closest('.footer__logo'));
+  });
+
 });
