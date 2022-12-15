@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'global';
 
+
 /*  ----------- Introduction -------------------- */
 
 .introduction {
@@ -75,6 +76,128 @@
     }
   }
 }
+
+.about-cards {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 66px;
+    height: 66px;
+    background: url('../images/about/deco-7.png') center/cover no-repeat;
+  }
+
+  &__inner {
+    padding: clamp(1.875rem, -4.367rem + 10.07vw, 3.75rem) 0;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(1216/1290 * 100%);
+    background-color: $lightgreen;
+    opacity: 0.8;
+    box-shadow: 0px 5px 20px rgba(113, 116, 115, 0.5);
+    border-radius: 12px;
+    padding: 20px 30px 10px 40px;
+    margin: 0 auto 45px;
+  }
+
+  &__num {
+    @extend %opensans-800;
+    color: $accent;
+    font-size: 64px;
+    opacity: 0.4;
+  }
+
+  &__text {
+    padding: 20px 0;
+    max-width: calc(850/1290 *100%);
+    font-size: 20px;
+    line-height: 1.3;    
+    span {
+      @extend %opensans-700;
+      font-size: 24px;
+      color: $accent;
+    }
+  }
+
+  &__img { 
+    margin: 0 0 0 auto; 
+    img {      
+      max-width: 380px;
+    }
+  }
+}
+
+.about-awards {
+  background-color: $bg;
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__inner {
+    padding: 0 clamp(1.875rem, 1.25rem + 3.13vw, 5rem);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+  }
+
+  &__item {
+    justify-self: center;
+    text-align: center;
+  }
+  &__img {
+    display: block;
+    margin-bottom: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+    img {
+      box-shadow: 0px 5px 10px rgba(55, 56, 56, 0.5);
+      border-radius: 12px;
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    color: $default;
+    font-size: 20px;
+    line-height: 1.3;
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: 1px solid $default;
+      }
+    }
+  }
+}
+
+.about-press {
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    a {
+      color: $green;
+      @media (any-hover: hover) {
+        &:hover {
+          border-bottom: 1px solid $green;
+        }
+      }
+    }
+  }
+}
+
 
 @import 'media';
 

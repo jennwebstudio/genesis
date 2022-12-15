@@ -37,6 +37,12 @@
     }
   }
 
+  &__item--active {
+    a {
+      color: $accent;
+    }
+  }
+
   &__link {
     color: $default;
     font-size: 20px;

@@ -202,6 +202,42 @@
       }
     }
 
+  /* ---------------- about page, block about-cards --------------------  */
+
+  .about-cards {
+    &::before {
+      display: none;
+    }
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 auto 25px;
+    }
+    &__num {
+      font-size: 48px;
+      order: -1;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 18px;
+      span {
+        font-size: 20px;
+      }
+    }
+    &__img {
+      margin: 0 auto;
+    }
+  }
+
+  /* ---------------- about page, block about-awards ----------------  */
+
+  .about-awards {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -268,6 +304,17 @@
     }
   }
 
+     /* ---------------- about page, block about-awards ----------------  */
+  
+  .about-awards {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
 }
 
 @media (max-width: 680px) {
@@ -320,6 +367,7 @@
         font-size: 16px;
       }
     }
+
 }
 
 
@@ -350,6 +398,20 @@
     }
     &__achivement-num {
       font-size: 48px;
+    }
+  }
+
+    /* ---------------- about page, block about-cards --------------------  */
+
+  .about-cards {
+    &__item {
+      padding: 20px 10px 40px;
+    }
+    &__num {
+      font-size: 32px;
+    }
+    &__img {
+      display: none;
     }
   }
 }
