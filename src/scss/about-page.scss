@@ -77,6 +77,8 @@
   }
 }
 
+/*  ----------- Cards -------------------- */
+
 .about-cards {
   position: relative;
   &::before {
@@ -133,6 +135,8 @@
   }
 }
 
+/*  ----------- Awards -------------------- */
+
 .about-awards {
   background-color: $bg;
   padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
@@ -173,6 +177,8 @@
     }
   }
 }
+
+/*  ----------- Press -------------------- */
 
 .about-press {
   padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;

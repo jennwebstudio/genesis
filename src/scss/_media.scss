@@ -96,6 +96,37 @@
       text-align: center;
     }
   }
+
+   /* ---------------- education-page --------------------  */
+
+  .edu-section {
+    &::before {
+      display: none;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+    &__content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__link {
+      margin: 0 auto;
+    }
+  }
+
+  .edu-section--eco.edu-section {
+    &::after {
+      display: none;
+    }
+    .edu-section__img {
+      order: 1;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -312,6 +343,17 @@
     }
     &__text {
       font-size: 18px;
+    }
+  }
+
+     /* ---------------- education-page, top ----------------  */
+
+  .education-page {
+    &__message {
+      flex-direction: column;
+      p {
+        text-align: center;
+      }
     }
   }
 

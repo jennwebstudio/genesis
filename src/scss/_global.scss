@@ -46,17 +46,26 @@ body {
   transform: scale(0);
 }
 
-.title {
+.title,
+.title-accent {
   @extend %pobeda;
   font-weight: 700;
+}
+
+.title {
   font-size: 48px;
   line-height: 1.2;
-  color: $green;
   margin-bottom: 40px;
+  color: $green;
 }
 
 h3.title {
   font-size: 40px;
+}
+
+.title-accent {
+  font-size: 40px;
+  color: $accent;
 }
 
 .link-btn {
@@ -90,6 +99,7 @@ h3.title {
     padding: 25px 0;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 20px;   
   }
 
@@ -140,6 +150,10 @@ h3.title {
   .title {
     font-size: 36px;
   }
+  h3.title,
+  .title-accent {
+    font-size: 34px;
+  }
   [class*="__blockquote"] {
     font-size: 24px;
   }
@@ -156,6 +170,11 @@ h3.title {
 @media (max-width: 560px) {
   .title {
     font-size: 32px;
+  }
+
+  h3.title,
+  .title-accent {
+    font-size: 30px;
   }
 
   .text {
