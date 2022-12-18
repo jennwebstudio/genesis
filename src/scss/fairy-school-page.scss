@@ -1,0 +1,111 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.school {
+  padding-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__title--block {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__wrap {
+    padding: clamp(1.875rem, 1.256rem + 3.09vw, 3.75rem) 0 clamp(1.875rem, 0.844rem + 5.15vw, 5rem);
+    position: relative;
+  }
+
+    /*  ----------- school header -------------------- */
+
+  &__header-wrap {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 50%;
+      left: 5%;
+      width: 90px;
+      height: 90px;
+      background: url('../images/fairy-school/deco-9.png') center/cover no-repeat;
+      z-index: -1;
+    }
+  }
+  &__header {
+    display: flex;
+    gap: 25px;
+    margin-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+  }
+  &__header-img {
+    flex-basis: 230px;
+    text-align: center;
+  }
+  &__header-text {
+    max-width: calc(990 / 1290 * 100%);
+    @extend %opensansitalic-400;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__header-link {
+    display: inline-block;
+    color: inherit;
+    @extend %opensans-600;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    gap: 25px;
+  }
+  &__content {
+    flex-basis: 70%;
+    padding-bottom: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
+  }
+  &__info {
+    margin-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+  }
+}
+
+/*  ----------- school-compart -------------------- */
+
+.school-compart {
+  
+  &__wrap {    
+    background-color: $bg;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 5%;
+      width: 146px;
+      height: 146px;
+      background: url('../images/fairy-school/deco-10.png') center/cover no-repeat;
+      z-index: 1;
+    }
+  }
+}
+
+.school-compcamp {
+  &__wrap {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+      width: 66px;
+      height: 66px;
+      background: url('../images/fairy-school/deco-11.png') center/cover no-repeat;
+    }
+  }
+}
+
+
+@import 'media';

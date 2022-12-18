@@ -184,4 +184,10 @@ h3.title {
   [class*="__blockquote"] {
     font-size: 20px;
   }
+
+  .breadcrambles {
+    &__link {
+      font-size: 20px;
+    }
+  }
 }
