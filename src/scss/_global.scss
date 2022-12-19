@@ -186,6 +186,9 @@ h3.title {
   }
 
   .breadcrambles {
+    &__inner {
+      gap: 15px;
+    }
     &__link {
       font-size: 20px;
     }
