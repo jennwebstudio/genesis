@@ -68,6 +68,12 @@ h3.title {
   color: $accent;
 }
 
+.text {
+  span {
+    @extend %opensans-600;
+  }
+}
+
 .link-btn {
   display: inline-flex;
   justify-content: space-between;
@@ -137,11 +143,39 @@ h3.title {
   }
 }
 
+.list {
+  position: relative;
+  padding-left: 30px;
+  list-style-image: url("../images/icons/disk.svg");
+  &__item {
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    a {
+      color: $default;
+      @media (any-hover: hover) {
+        &:hover {
+          border-bottom: 1px solid $default;
+        }
+      }
+    }
+  }
+}
+
 .link-disabled {
   cursor: no-drop;
   @media (any-hover: hover) {
     &:hover {
       border-bottom: none;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  
+  .list {
+    &__item {
+      padding-left: 20px;
     }
   }
 }
@@ -191,6 +225,12 @@ h3.title {
     }
     &__link {
       font-size: 20px;
+    }
+  }
+
+  .list {
+    &__item {
+      font-size: 18px;
     }
   }
 }

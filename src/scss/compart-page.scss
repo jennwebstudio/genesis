@@ -52,7 +52,7 @@
 
 .compart-umk {
   background: url('../images/school-compart/umk-bg.jpg') center/cover no-repeat;
-  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0 40px;
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0 0;
 
   &__title {
     text-align: center;
@@ -98,37 +98,169 @@
   }
 
   &__list {
-    position: relative;
-    padding-left: 30px;
-    list-style-image: url("../images/icons/disk.svg");
+    padding-bottom: clamp(1.875rem, 1.125rem + 3.75vw, 5.625rem);
     &::after {
       content: '';
       position: absolute;
-      width: 150px;
+      width: 160px;
       height: 160px;
       bottom: 6%;
       right: 5%;
-      background: url('../images/deco-6.png') center/cover no-repeat;
-    }
-  }
-
-  &__item {
-    padding-left: 40px;
-    margin-bottom: 15px;
-    a {
-      color: $default;
-      @media (any-hover: hover) {
-        &:hover {
-          border-bottom: 1px solid $default;
-        }
-      }
+      background: url('../images/deco-6.png') center/contain no-repeat;
     }
   }
 }
 
+.compart-project {
+  padding: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem) 0;
+  margin-bottom: 30px;
+  background-image: url('../images/school-compart/compart-project-bgleft.png'); 
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 2%;
+    left: 5%;
+    background: url('../images/decor/deco-12.png') center/cover no-repeat;
+  }
 
+  &__top {
+    display: flex;
+    gap: 40px;
+    margin-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+  }
 
+  &__img {
+    position: relative;
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
 
+  &__num {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    @extend %opensans-800;
+    font-size: 64px;
+    line-height: 1;
+    color: $green;
+    opacity: 0.2;
+  }
 
+  &__info {
+    max-width: 70%;
+  }
+
+  &__title {
+    color: $accent;
+    @extend %opensans-600;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__content {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    width: 35%;
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    width: 30%;
+    text-align: center;
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      color: $default;
+      margin-bottom: 20px;
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__link {
+    color: $default;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+}
+
+.compart-project--even {
+  background-image: url('../images/school-compart/compart-project-bgright.png');
+  background-position: top right;
+  &::before {
+    display: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    bottom: 2%;
+    right: 3%;
+    background: url('../images/decor/deco-13.png') center/contain no-repeat;
+  }
+  .compart-project__num {
+    right: 10px;
+    left: auto;
+  }
+}
+
+.compart-project--odd {
+  &::before {
+    background: url('../images/decor/deco-14.png') center/cover no-repeat;
+    width: 80px;
+    height: 80px;
+    top: 37%;
+    left: 3%;
+  }
+}
+
+.compart-links {
+  padding-bottom: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem);
+  &__text {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  a {
+    color: $green;
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: 1px solid $green;
+      }
+    }
+  }
+}
 
 @import 'media';
