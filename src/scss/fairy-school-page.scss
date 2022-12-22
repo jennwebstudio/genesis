@@ -31,7 +31,7 @@
       left: 5%;
       width: 90px;
       height: 90px;
-      background: url('../images/fairy-school/deco-9.png') center/cover no-repeat;
+      background: url('../images/decor/deco-8.png') center/cover no-repeat;
       z-index: -1;
     }
   }
@@ -43,6 +43,11 @@
   &__header-img {
     flex-basis: 230px;
     text-align: center;
+    img {
+      border-radius: 12px;
+      object-fit: cover;
+      width: 100%;
+    }
   }
   &__header-text {
     max-width: calc(990 / 1290 * 100%);
@@ -87,7 +92,7 @@
       right: 5%;
       width: 146px;
       height: 146px;
-      background: url('../images/fairy-school/deco-10.png') center/cover no-repeat;
+      background: url('../images/decor/deco-10.png') center/cover no-repeat;
       z-index: 1;
     }
   }
@@ -102,8 +107,17 @@
       left: 5%;
       width: 66px;
       height: 66px;
-      background: url('../images/fairy-school/deco-11.png') center/cover no-repeat;
+      background: url('../images/decor/deco-11.png') center/cover no-repeat;
     }
+  }
+}
+
+/*  ----------- ecoprophylaxis psge -------------------- */
+
+.ecoprophylaxis {
+  &__text {
+    @extend %opensans-400;
+    max-width: calc(990 / 1290 * 100%);
   }
 }
 

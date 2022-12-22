@@ -71,6 +71,7 @@
   }
 
   &__achivements {
+    list-style: none;
     padding: 0 clamp(3.125rem, -1.223rem + 9.06vw, 6.25rem);
     display: flex;
     justify-content: center;
@@ -150,7 +151,7 @@
       width: 110px;
       height: 130px;
       position: absolute;
-      background: url('../images/deco-1.png') no-repeat center/cover;
+      background: url('../images/decor/deco-1.png') no-repeat center/cover;
       top: 48px;
       left: 1.3%;
       z-index: 1;
@@ -170,7 +171,7 @@
     width: 60px;
     height: 118px;
     position: absolute;
-    background: url('../images/deco-2.png') no-repeat center/cover;
+    background: url('../images/decor/deco-2.png') no-repeat center/cover;
     top: 0;
     left: 111%;
     z-index: 1;
@@ -189,7 +190,7 @@
 
   .middle::after {
     width: 160px;
-    background: url('../images/deco-3.png') no-repeat center/cover;
+    background: url('../images/decor/deco-3.png') no-repeat center/cover;
     left: -130%;
   }
 
@@ -201,7 +202,7 @@
       width: 60px;
       height: 118px;
       position: absolute;
-      background: url('../images/deco-2.png') no-repeat center/cover;
+      background: url('../images/decor/deco-2.png') no-repeat center/cover;
       bottom: 0;
       left: 111%;
       z-index: 1;
@@ -244,7 +245,7 @@
       &::before {
         width: 146px;
         height: 156px;
-        background: url('../images/deco-4.png') no-repeat center/cover;
+        background: url('../images/decor/deco-4.png') no-repeat center/cover;
         top: -50%;
         right: 0;
       }

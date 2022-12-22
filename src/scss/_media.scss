@@ -196,6 +196,12 @@
       display: none;
     }
   }
+
+  .ecoproph-school {
+    &__docs::after {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -415,6 +421,30 @@
       align-items: center;
     }
   }
+
+   /* ---------------- ecoproph-school page  --------------------  */
+
+  .ecoproph-school {
+    &__umk {
+      padding-left: 50px;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__list,
+    &__demo {
+      width: 100%;
+    }
+    &__demo {
+      .docs__item {
+        margin-bottom: 0;
+      }
+    }
+    &__journal-docs {
+      flex-direction: column;
+      padding-left: 50px;
+      gap: 30px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -465,11 +495,12 @@
       max-width: 100%;
     }
   }
+
   .docs {
     padding: 0;
     &__item {
       padding: 100px 0 0;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       text-align: center;
       a {
         font-size: 20px;        
@@ -515,6 +546,35 @@
     }
   }
 
+   /* ---------------- ecoprophylaxis page --------------------  */
+
+  .ecoprophylaxis {
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  /* ---------------- ecoproph-school page --------------------  */
+
+  .ecoproph-school {
+    &__umk,
+    &__journal-docs {
+      padding-left: 0;
+      gap: 0;
+    }
+    &__journal-text {
+      flex-basis: 100%;
+    }
+    &__journal-img {
+      margin: 0 auto;
+      order: -1;
+    }
+    &__demo {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {
@@ -623,6 +683,14 @@
     }
   }
 
+  /* ---------------- ecoprophylaxis page --------------------  */
+
+  .ecoprophylaxis {
+    &__text {
+      font-size: 18px;
+    }
+  }
+
   /* ---------------- school-compart page  --------------------  */
 
   .compart-header {
@@ -676,6 +744,14 @@
       img {
         margin: 0 auto 15px;
       }
+    }
+  }
+
+  /* ---------------- ecoproph-school page --------------------  */
+
+  .ecoproph-school {
+    &__journal-text {
+      font-size: 18px;
     }
   }
 }

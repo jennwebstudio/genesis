@@ -32,7 +32,7 @@
       height: 155px;
       top: 6%;
       left: 0;
-      background: url('../images/deco-4.png') center/cover no-repeat;
+      background: url('../images/decor/deco-4.png') center/cover no-repeat;
     }
   }
 
@@ -40,6 +40,7 @@
     display: block;
     margin-bottom: 25px;
     border-radius: 20px;
+    object-fit: cover;
     &:first-child {
       margin-left: 36%;
     }
@@ -106,7 +107,7 @@
       height: 160px;
       bottom: 6%;
       right: 5%;
-      background: url('../images/deco-6.png') center/contain no-repeat;
+      background: url('../images/decor/deco-6.png') center/contain no-repeat;
     }
   }
 }
