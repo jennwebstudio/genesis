@@ -445,6 +445,14 @@
       gap: 30px;
     }
   }
+
+/* ---------------- 404-page --------------------  */
+
+  .error-page {
+    &__text {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -573,6 +581,21 @@
       p {
         font-size: 20px;
       }
+    }
+  }
+
+/* ---------------- 404-page --------------------  */
+
+  .error-page {
+    &__inner {
+      flex-direction: column;
+    }
+    &__item {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+    &__text {      
+      max-width: 100%;
     }
   }
 }
@@ -751,6 +774,14 @@
 
   .ecoproph-school {
     &__journal-text {
+      font-size: 18px;
+    }
+  }
+
+/* ---------------- 404-page --------------------  */
+
+  .error-page {
+    &__text {
       font-size: 18px;
     }
   }

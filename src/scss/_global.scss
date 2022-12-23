@@ -10,14 +10,14 @@ body {
   }
 }
 
+
 [class*="__container"] {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-[class*="__blockquote"] {
-  
+[class*="__blockquote"] {  
   padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
   @extend %opensansitalic-600;
   color: $green;
