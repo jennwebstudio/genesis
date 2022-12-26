@@ -202,6 +202,37 @@
       display: none;
     }
   }
+
+  /* ---------------- fairy-camp page--------------------  */
+
+  .fairy-camp {
+
+    &__descr {
+      &::after {
+        display: none;
+      }
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__slider {
+      max-width: 100%;
+    }
+    &__slide {
+      img {
+        margin: 0 auto;
+      }
+    }
+    &__album {
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -451,6 +482,27 @@
   .error-page {
     &__text {
       font-size: 20px;
+    }
+  }
+
+  /* ---------------- fairy-camp page--------------------  */
+  
+  .fairy-camp {
+    &__album-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__album-img {
+      width: 100%;
+      img {
+        margin: 0 auto;
+      }
+    }
+    &__album-info {
+      width: 100%;
+    }
+    &__album-title {
+      text-align: center;
     }
   }
 }
@@ -785,6 +837,17 @@
       font-size: 18px;
     }
   }
+
+    /* ---------------- fairy-camp page--------------------  */
+  
+    .fairy-camp {
+      &__album-content {
+        margin-bottom: 20px;
+      }
+      &__album-title {
+        font-size: 20px;
+      }
+    }
 }
 
 @media (max-width: 420px) {
