@@ -10,6 +10,9 @@ body {
   }
 }
 
+a {
+  color: $green;
+}
 
 [class*="__container"] {
   max-width: 1320px;

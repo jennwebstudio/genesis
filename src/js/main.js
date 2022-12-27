@@ -40,33 +40,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ------------  Slider fairy-camp__slider -------------
 
-  var slideIndex = 1;
-  const prev = document.querySelector('.fairy-camp__btn--prev'),
-        next = document.querySelector('.fairy-camp__btn--next');
+  if (document.querySelector('.fairy-camp__btn')) {
+    var slideIndex = 1;
+    const prev = document.querySelector('.fairy-camp__btn--prev'),
+          next = document.querySelector('.fairy-camp__btn--next');
 
-  showSlides(slideIndex);
+    showSlides(slideIndex);
 
-  prev.addEventListener('click', () => {
-    plusSlides(-1);
-  });
+    prev.addEventListener('click', () => {
+      plusSlides(-1);
+    });
 
-  next.addEventListener('click', () => {
-    plusSlides(1);
-  });
+    next.addEventListener('click', () => {
+      plusSlides(1);
+    });
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function showSlides(n) {
-    var i;
-    const slides = document.querySelectorAll('.fairy-camp__slide');
-    if ( n > slides.length) { slideIndex = 1; }
-    if  (n < 1) { slideIndex = slides.length; }
-    for ( i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    slides[slideIndex - 1].style.display = 'block';
+
+    function showSlides(n) {
+      var i;
+      const slides = document.querySelectorAll('.fairy-camp__slide');
+      if ( n > slides.length) { slideIndex = 1; }
+      if  (n < 1) { slideIndex = slides.length; }
+      for ( i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slides[slideIndex - 1].style.display = 'block';
+    }
   }
 
 });
