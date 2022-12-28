@@ -242,6 +242,17 @@
       display: none;
     }
   }
+
+ /* ---------------- contests page--------------------  */
+
+  .contests {
+    &__wrap, &__wrap--bg,
+    &__wrap--bottom {
+      &::before, &::after {
+        content: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
