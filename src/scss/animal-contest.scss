@@ -1,0 +1,47 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.animal-contest {
+  padding: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem) 0;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    bottom: 10%;
+    left: 5%;
+    background: url('../images/decor/deco-11.png') center/contain no-repeat;
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    top: 15%;
+    right: 5%;
+    background: url('../images/decor/deco-10.png') center/contain no-repeat;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 30px;
+  }
+  &__docs {
+    padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+    margin-left: 30px;
+  }
+  &__photos {
+    padding: 20px 0;
+  }
+}
+
+
+
+@import 'media';

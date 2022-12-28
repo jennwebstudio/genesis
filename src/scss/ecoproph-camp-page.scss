@@ -23,24 +23,13 @@
     bottom: 5%;
     left: 5%;
     background: url('../images/decor/deco-11.png') center/contain no-repeat;
+    z-index: -1;
   }
   &__title {
     text-align: center;
   }
   &__photos {
     padding-top: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__img {   
-    width: 32%; 
-    img {
-      display: block;
-      width: 100%;
-      border-radius: 20px;
-      object-fit: cover;
-    }
   }
 }
 

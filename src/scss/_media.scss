@@ -253,6 +253,14 @@
       }
     }
   }
+
+/* ---------------- animal-contest page--------------------  */
+
+  .animal-contest {
+    &::before, &::after {
+      content: none;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -525,22 +533,6 @@
       text-align: center;
     }
   }
-
-  /* ---------------- ecoproph-camp page --------------------  */
-  
-  .ecoproph-camp {
-    &__photos {
-      flex-direction: column;
-      gap: 30px;
-    }
-    &__img {
-      width: 100%;
-      img {
-        width: 70%;
-        margin: 0 auto;
-      }
-    }
-  }
 }
 
 @media (max-width: 768px) {
@@ -684,6 +676,17 @@
     }
     &__text {      
       max-width: 100%;
+    }
+  }
+
+ /* -------------- animal-contest page ---------------  */
+
+  .animal-contest {
+    &__docs {
+      margin-top: 40px;
+    }
+    &__docs {
+      margin-left: 0;
     }
   }
 }
@@ -885,19 +888,14 @@
       }
     }
 
-  /* ---------------- ecoproph-camp page --------------------  */
-
-  .ecoproph-camp {
-    &__img {
-      &:first-child,
-      &:last-child {
-        display: none;
-      }
-      img {
-        width: 100%;
+  /* ---------------- animal-contest page --------------------  */
+    .animal-contest {
+      &__list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 10px;
       }
     }
-  }
 }
 
 @media (max-width: 420px) {
