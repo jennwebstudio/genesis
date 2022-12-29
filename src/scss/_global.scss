@@ -165,6 +165,11 @@ h3.title {
   }
 }
 
+.ordered-list {
+  margin-left: 30px;
+  padding: 0;
+}
+
 .photos {
   display: flex;
   justify-content: space-between;
@@ -277,6 +282,10 @@ h3.title {
     &__item {
       font-size: 18px;
     }
+  }
+
+  .ordered-list {
+    font-size: 20px;
   }
 
   .photos {

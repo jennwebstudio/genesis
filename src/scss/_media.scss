@@ -254,9 +254,9 @@
     }
   }
 
-/* ---------------- animal-contest page--------------------  */
+/* ---------------- item-contest page--------------------  */
 
-  .animal-contest {
+  .item-contest {
     &::before, &::after {
       content: none;
     }
@@ -533,6 +533,14 @@
       text-align: center;
     }
   }
+
+  /* ---------------- ecoproph-contest page --------------------  */
+
+  .ecoproph-contest {
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -679,9 +687,9 @@
     }
   }
 
- /* -------------- animal-contest page ---------------  */
+ /* -------------- item-contest page ---------------  */
 
-  .animal-contest {
+  .item-contest {
     &__docs {
       margin-top: 40px;
     }
@@ -888,8 +896,8 @@
       }
     }
 
-  /* ---------------- animal-contest page --------------------  */
-    .animal-contest {
+  /* ---------------- item-contest page --------------------  */
+    .item-contest {
       &__list {
         padding-top: 20px;
         padding-bottom: 20px;

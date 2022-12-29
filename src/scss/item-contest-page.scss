@@ -3,7 +3,7 @@
 @import 'reset';
 @import 'global';
 
-.animal-contest {
+.item-contest {
   padding: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem) 0;
   position: relative;
   &::before {
@@ -40,6 +40,7 @@
   &__photos {
     padding: 20px 0;
   }
+  
 }
 
 
