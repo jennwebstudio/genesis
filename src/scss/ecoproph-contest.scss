@@ -12,13 +12,12 @@
     padding: 30px 0;
   }
   &__img {
+    margin-bottom: 20px;
     img {
       border-radius: 12px;
       object-fit: cover;
     }
   }
 }
-
-
 
 @import 'media';

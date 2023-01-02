@@ -1,0 +1,47 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.reports {
+  padding: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem) 0;
+  &__title {
+    text-align: center;
+  }
+  &__box {
+    width: calc( 960 / 1290 * 100%);
+    margin: 0 auto 45px;
+  }
+  &__list {
+    padding: 45px 0 0 95px;
+    max-width: 87%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  &__item {
+    a {
+      color: $default;
+      transition: color .3s linear;
+      @media (any-hover: hover) {
+        &:hover {
+          color: $green;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';

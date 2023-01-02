@@ -146,6 +146,32 @@ h3.title {
   }
 }
 
+.docs {
+  padding: 30px 0;
+
+  &__item {
+    padding: 20px 0 20px 95px;
+    position: relative;
+    margin-bottom: 35px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    a {
+      color: $default;
+
+      @media (any-hover: hover) {
+        &:hover {
+          border-bottom: 1px solid $default;
+        }
+      }
+    }
+  }
+}
+
 .list {
   position: relative;
   padding-left: 30px;

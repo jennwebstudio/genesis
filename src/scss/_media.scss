@@ -540,6 +540,17 @@
     &__text {
       margin-bottom: 20px;
     }
+    &__img {
+      order: 1;
+    }
+  }
+
+  /* ---------------- reports page -----------------  */
+
+  .reports {
+    &__list {
+      max-width: 100%;
+    }
   }
 }
 
@@ -695,6 +706,17 @@
     }
     &__docs {
       margin-left: 0;
+    }
+  }
+
+   /* ---------------- reports page -----------------  */
+
+  .reports {
+    &__box {
+      width: 100%;
+    }
+    &__list {
+      padding: 45px 20px;
     }
   }
 }
