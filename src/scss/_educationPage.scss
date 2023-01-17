@@ -15,17 +15,6 @@
       @extend %opensans-600;
     }
   }
-
-  &__message {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    p {
-      font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
-    }
-  }
 }
 
 /*  ----------- Education page section edu-section-------------------- */
