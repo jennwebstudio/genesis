@@ -1,0 +1,67 @@
+.wayofkind {
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+  background-image: url('../images/wayofkind/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__text {
+    @extend %opensans-600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    @extend %opensans-700;
+    font-size: 32px;
+    line-height: 44px;
+    color: $accent;
+    margin-bottom: 40px;
+    &-center {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    max-width: 630px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  &__docs {
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__links {
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.wayofkind-bg {
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+  background-color: $bg;
+}

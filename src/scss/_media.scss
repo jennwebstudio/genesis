@@ -552,6 +552,54 @@
       max-width: 100%;
     }
   }
+
+  /* ---------------- contests page -----------------  */
+
+  .contests {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+  }
+
+  /* ---------------- way-of-kind page -----------------  */
+
+  .wayofkind {
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      flex-basis: 100%;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__img {
+      margin: 0 auto;
+    }
+
+    &__docs {
+      padding-left: 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    &__links {
+      padding-left: 10%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+
+  .wayofkind-bg {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -717,6 +765,21 @@
     }
     &__list {
       padding: 45px 20px;
+    }
+  }
+
+ /* ---------------- way-of-kind page -----------------  */
+
+  .wayofkind {
+    &__img {
+
+    }
+    &__docs {
+      padding-left: 0;
+    }
+    &__links {
+      padding-left: 0;
+      align-items: center;
     }
   }
 }
@@ -919,13 +982,21 @@
     }
 
   /* ---------------- item-contest page --------------------  */
-    .item-contest {
-      &__list {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-left: 10px;
-      }
+  .item-contest {
+    &__list {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 10px;
     }
+  }
+
+  /* ---------------- way-of-kind page -----------------  */
+
+  .wayofkind {
+    &__title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 420px) {

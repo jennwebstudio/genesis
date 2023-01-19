@@ -33,5 +33,11 @@ module.exports = {
     src: pathSrc + "/fonts/*.{otf,ttf,eot,ttc,otc,woff,woff2,svg}",
     watch: pathSrc + "/fonts/**/*.{otf,ttf,eot,ttc,otc,woff,woff2,svg}",
     dest: pathDest + "/fonts"
+  },
+
+  docs: {
+    src: pathSrc + "/ufiles/**/*.{doc,docx,pdf,zip,rar,jpg,png}",
+    watch: pathSrc + "/ufiles/**/*.{doc,docx,pdf,zip,rar,jpg,png}",
+    dest: pathDest + "/ufiles"
   }
 }

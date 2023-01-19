@@ -162,10 +162,12 @@ h3.title {
 
     a {
       color: $default;
+      transition: color .3s ease-in-out;
 
       @media (any-hover: hover) {
         &:hover {
-          border-bottom: 1px solid $default;
+          color: $green;
+          text-decoration: underline;
         }
       }
     }
