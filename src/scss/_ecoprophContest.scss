@@ -6,6 +6,17 @@
   }
   &__list {
     padding: 30px 0;
+    &-text {
+      font-size: 16px;
+      a {
+        font-size: 16px;
+        transition: color .3s ease-in-out;
+        &:hover {
+          color: $green;
+          
+        }
+      }
+    }
   }
   &__img {
     margin-bottom: 20px;

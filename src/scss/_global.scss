@@ -238,6 +238,12 @@ h3.title {
   }
 }
 
+.fairy-photo {
+  img {
+    border: 1px solid rgba(0, 125, 112, 0.2);
+  }
+}
+
 @keyframes fade {
   from {
     opacity: .4
