@@ -31,6 +31,10 @@ a {
     display: inline-block;
     position: relative;
     z-index: 5;
+    span {
+      @extend %opensansitalic-400;
+      font-size: 24px;
+    }
   }
   blockquote::before {
     position: absolute;
@@ -41,6 +45,12 @@ a {
     top: 0;
     left: -5%;
     z-index: -1;
+  }
+}
+
+.blockquote-long {
+  blockquote {
+    max-width: calc(750px / 1290px * 100%);
   }
 }
 
@@ -153,6 +163,10 @@ h3.title {
     padding: 20px 0 20px 95px;
     position: relative;
     margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     img {
       position: absolute;
@@ -290,6 +304,11 @@ h3.title {
 
 @media (max-width: 768px) {
   [class*="__blockquote"] {
+    blockquote {
+      span {
+        font-size: 18px;
+      }
+    }
     blockquote::before {
       display: none;
     }

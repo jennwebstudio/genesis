@@ -36,8 +36,8 @@ module.exports = {
   },
 
   docs: {
-    src: pathSrc + "/ufiles/**/*.{doc,docx,pdf,zip,rar,jpg,png}",
-    watch: pathSrc + "/ufiles/**/*.{doc,docx,pdf,zip,rar,jpg,png}",
+    src: pathSrc + "/ufiles/**/*.*",
+    watch: pathSrc + "/ufiles/**/*.*",
     dest: pathDest + "/ufiles"
   }
 }

@@ -1,0 +1,30 @@
+.dobroshefstvo {
+  padding: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem) 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 24px;
+    &-inner {
+      padding-left: 15px;
+    }
+  }
+
+  &__list {
+    padding: 30px 0 30px 30px;
+  }
+
+  &__docs {
+    padding-left: 60px;
+  }
+
+  &__link {
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
