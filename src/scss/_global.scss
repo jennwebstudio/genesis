@@ -85,6 +85,13 @@ h3.title {
   span, a {
     @extend %opensans-600;
   }
+  a {
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .link-btn {
