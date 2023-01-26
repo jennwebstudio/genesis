@@ -183,12 +183,13 @@ h3.title {
 
     a {
       color: $default;
+      border-bottom: 1px solid $default;
       transition: color .3s ease-in-out;
 
       @media (any-hover: hover) {
         &:hover {
           color: $green;
-          text-decoration: underline;
+          border-bottom-color: $green;
         }
       }
     }
@@ -205,9 +206,12 @@ h3.title {
     font-size: 20px;
     a {
       color: $default;
+      border-bottom: 1px solid $default;
+      transition: color .3s ease-in-out;
       @media (any-hover: hover) {
         &:hover {
-          border-bottom: 1px solid $default;
+          color: $green;
+          border-bottom-color: $green;
         }
       }
     }

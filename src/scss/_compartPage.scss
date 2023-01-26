@@ -181,10 +181,11 @@
     a {
       display: block;
       color: $default;
+      text-decoration: underline;
       margin-bottom: 20px;
       @media (any-hover: hover) {
         &:hover {
-          text-decoration: underline;
+          color: $green;
         }
       }
     }
@@ -246,7 +247,7 @@
     color: $green;
     @media (any-hover: hover) {
       &:hover {
-        border-bottom: 1px solid $green;
+        text-decoration: underline;
       }
     }
   }

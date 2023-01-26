@@ -28,9 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
 }
   menu.addEventListener('click', (event) => {
     event.preventDefault();
-    if (event.target && event.target.matches(".menu__link")) {
+    if (event.target && event.target.matches(".link-ancor")) {
+      
       smoothScroll(event.target);
+    } else {
+      window.location.href = event.target.getAttribute('href');
     }
+    
   });  
 
   footLogo.addEventListener('click', (event) => {
@@ -39,6 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ------------  Slider fairy-camp__slider -------------
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    var i;
+    const slides = document.querySelectorAll('.fairy-camp__slide');
+    if ( n > slides.length) { slideIndex = 1; }
+    if  (n < 1) { slideIndex = slides.length; }
+    for ( i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slides[slideIndex - 1].style.display = 'block';
+  }
 
   if (document.querySelector('.fairy-camp__btn')) {
     var slideIndex = 1;
@@ -54,21 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
       plusSlides(1);
     });
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      var i;
-      const slides = document.querySelectorAll('.fairy-camp__slide');
-      if ( n > slides.length) { slideIndex = 1; }
-      if  (n < 1) { slideIndex = slides.length; }
-      for ( i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
-      slides[slideIndex - 1].style.display = 'block';
-    }
   }
 
 });

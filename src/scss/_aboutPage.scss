@@ -168,14 +168,7 @@
 
   &__text {
     margin-bottom: 15px;
-    a {
-      color: $green;
-      @media (any-hover: hover) {
-        &:hover {
-          border-bottom: 1px solid $green;
-        }
-      }
-    }
+    
   }
 }
 

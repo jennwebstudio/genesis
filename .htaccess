@@ -1,0 +1,3 @@
+# подключение 404 страницы
+
+ErrorDocument 404 http://v91711bq.beget.tech/genesis/404.html

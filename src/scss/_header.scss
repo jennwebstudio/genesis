@@ -36,6 +36,11 @@
   }
 
   &__item--active {
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: none;
+      }
+    }
     a {
       color: $accent;
     }
