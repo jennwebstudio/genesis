@@ -2,8 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  const body = document.body,
-        menu = document.querySelector('.header__menu'),
+  const menu = document.querySelector('.header__menu'),
         burger = document.querySelector('.menu__icon');
 
   // ------------------ mobile menu ---------------
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', () => {
     burger.classList.toggle('_active');
     menu.classList.toggle('_active');
-    body.classList.toggle('_lock');  // не дает скроллить сайт при открытом меню
+    
   });
 
   // ------------------ smooth scroll ---------------
@@ -29,7 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   menu.addEventListener('click', (event) => {
     event.preventDefault();
     if (event.target && event.target.matches(".link-ancor")) {
-      
+      burger.classList.remove('_active');
+      menu.classList.remove('_active');
+
       smoothScroll(event.target);
     } else {
       window.location.href = event.target.getAttribute('href');
